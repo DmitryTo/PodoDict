@@ -14,7 +14,12 @@ VK.init({
   apiId: 51465672
 });
 </script>
-
+<script type="text/javascript">
+	document.ondragstart = noselect;
+	document.onselectstart = noselect;
+	document.oncontextmenu = noselect;
+	function noselect() {return false;}
+</script>
 
 <blockquote cite="vk.com/pododict">PodoDict - бесплатный словарь подолога. А также книги и материалы по подологии.</blockquote>
 
